@@ -6,7 +6,7 @@ import { calendarDataMock } from '@/__mocks__/calendar-data-mock';
 
 const { calendarData } = calendarDataMock;
 
-jest.mock('@/components/calendar/use-calendar', () => ({
+jest.mock('@/hooks/use-calendar', () => ({
   useCalendar: jest.fn(),
 }));
 
