@@ -22,7 +22,7 @@ describe('useCalendar with mocked data', () => {
   });
 
   it('isLoading state updates correctly after initial render', async () => {
-    const { result  } = renderHook(() =>
+    const { result } = renderHook(() =>
       useCalendar(
         calendarData.currentDate,
         calendarData.daysOfWeek,
