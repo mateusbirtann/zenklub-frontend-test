@@ -10,7 +10,7 @@ describe('UserBusinessProfileHeader', () => {
     render(<UserBusinessProfileHeader userBusinessProfileData={userBusinessProfileData} />);
     expect(screen.getByText(userBusinessProfileData.username)).toBeInTheDocument();
     expect(screen.getByText(userBusinessProfileData.jobRole)).toHaveClass(
-      'text-blue-600 font-bold',
+      'text-brand-500 font-bold',
     );
     expect(screen.getByText(userBusinessProfileData.address)).toBeInTheDocument();
     expect(screen.getByText(`(${userBusinessProfileData.reviews} Avaliações)`)).toBeInTheDocument();
